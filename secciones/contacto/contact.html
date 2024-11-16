@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Daily</title>
+    <link rel="stylesheet" href="./contactStyles.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" href="https://res.cloudinary.com/ddpmly8bf/image/upload/t_Profile/v1714770932/_392faee3-6012-446d-9913-68fc9a597821_bpfskg.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="roboto-regular">
+    <header>
+        <nav class="NavContainer ">
+            <a href="../../index.html">
+                <img class="logo" src="https://res.cloudinary.com/ddpmly8bf/image/upload/t_Profile/v1714770932/_392faee3-6012-446d-9913-68fc9a597821_bpfskg.png" alt="logo">
+                </a>
+           
+            <div class="lincks">
+                <a class="navLincks" href="../noticias/noticias.html">Noticias</a>
+                <a class="navLincks" href="../nosotros/nosotros.html">Nosotros</a>
+                <a class="navLincks" href="../contacto/contact.html">Contacto</a>
+            </div>
+            
+            <!-- boton hamburguesa -->
+            <div class="botonHamburguesa">
+               <div class="icon nav-icon-5">
+                   <span></span>
+                   <span></span>
+                   <span></span>
+                </div>
+            </div>
+            <div class="fondoMenu">
+            </div>
+        </nav> 
+    </header>
+    <main id="padre">
+        <h2>Contacto</h2>
+        <form  action="https://formspree.io/f/xvgorjbo"
+        method="POST" class="formulario" id="formulario" novalidate>
+               <h3>Formulario De Contacto</h3> 
+            <div class="formulari_grupo" id="grupo_nombre">
+                    <label for="nombre" class="formulario_label">Nombre y apellido:</label>
+                    <div class="formulario_grupo_input">
+                        <input type="text" class="formulario_input" name="nombre" id="nombre">
+                        <i class="formulario_validacion_grupo fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="error_input">Error: Tiene que ser de 4 a 40 digitos y no puede contener numeros y simbolos. </p>
+                </div>
+     
+                <div class="formulari_grupo" id="grupo_email">
+                    <label for="email" class="formulario_label">Correo Electronico:</label>
+                        <div class="formulario_grupo_input">
+                            <input type="email" class="formulario_input" name="email" id="email">
+                            <i class="formulario_validacion_grupo fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <p class="error_input">Error: Tiene que contener (@) y (.com ) </p>
+                </div>
+                <br>
+                <div class="formulari_grupo" id="grupo_fn">
+                    <div class="nacimiento">
+                        <label for="fn" class="formulario_label">Fecha de Nacimiento:</label>
+                        <input type="date" class="reason" name="fn" id="fn" required>
+                    </div>
+                </div>            
+                <div class="formulari_grupo" id="grupo_selecc">
+                    <label for="area" class="formulario_label">Seleccione su Genero: <small>(opcional)</small></label required>
+                    <div class="reason">
+                        <input type="radio" name="area" id="F" value="Femenino">
+                        <label for="F">Femenino</label>
+                        <input type="radio" name="area" id="M" value="Masculino">
+                        <label for="M">Masculino</label>
+                        <input type="radio" name="area" id="O" value="otro">
+                        <label for="O">otro</label>
+                    </div>
+                </div>
+     
+                <div class="formulari_grupo" id="grupo_opcion">
+                    <label for="reason" class="formulario_label" >Seleccione una opcion: <small>(opcional)</small>  </label>
+                    <select id="reason"  class="reason" name="reason" aria-label="Motivo de contacto">
+                        <option value="">Selecciona....</option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Sugerencia">Sugerencia</option>
+                        <option value="Comentario">Otro</option>
+                      </select>
+                </div>
+                <div class="formulari_grupo" id="grupo_comentario">
+                    <label for="comentario" class="formulario_label">Comentario:</label>
+                    <textarea name="comentario" id="comentario" cols="45" rows="5" placeholder="opcional..."></textarea>
+                </div>
+                <br>
+                <div class="formulari_grupo" id="teminos">
+                    <label class="reason">
+                        <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto terminos y condiciones
+                    </label>
+                </div>
+                <br>
+                <div class="formulario_msj" id="formulario_msj">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Complete el formulario</p>
+                </div>
+                <div class="formulari_grupo formulario_enviar">
+                    <button type="submit" class="formulario_btn">Enviar</button>
+                    <p class="formulario_exito" id="formulario_exito">Formulario Enviado</p>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-links">
+                    <a href="../noticias/noticias.html">Noticias</a>
+                    <a href="../nosotros/nosotros.html">Nosotros</a>
+                    <a href="../contacto/contact.html">Contacto</a>
+                </div>
+                <div class="footer-image">
+                    <img src= "https://res.cloudinary.com/ddpmly8bf/image/upload/t_Profile/v1714770932/_392faee3-6012-446d-9913-68fc9a597821_bpfskg.png" alt= "Descripción de la imagen">
+                </div>
+                <div class="footer-rights">
+                  &copy; SportDaily <span id="año"></span> Todos los derechos reservados.
+                </div>
+            </div>
+    .
+ <script src="https://kit.fontawesome.com/e229c24ae0.js" crossorigin="anonymous"></script>       
+
+</body>
+</html>

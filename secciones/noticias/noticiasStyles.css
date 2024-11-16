@@ -1,0 +1,33 @@
+.noticiasContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 2rem;
+}
+
+.noticiaContainer {
+  padding: 2rem;
+}
+
+.noticiaContainer:hover {
+  transform: scale(1.1);
+}
+
+.noticiaDetalle {
+  background-color: red;
+}
+.categoria-noticia {
+  color :#ca3d38;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .noticiaContainer {
+    justify-content: center;
+    margin: 0 auto
+  }
+}
